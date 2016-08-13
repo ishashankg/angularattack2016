@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Travel Recommender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="app/css/style.css">
+	  <link rel="icon" href="app/images/img.ico" type="image/ico" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="es6-shim/es6-shim.min.js"></script>
+    <script src="systemjs/dist/system-polyfills.js"></script>
+    <script src="angular2/bundles/angular2-polyfills.js"></script>
+    <script src="systemjs/dist/system.src.js"></script>
+    <script src="rxjs/bundles/Rx.js"></script>
+    <script src="angular2/bundles/angular2.dev.js"></script>
+	  <script src="angular2/bundles/http.dev.js"></script>
+    <script src="angular2/bundles/router.dev.js"></script>
+
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
+
+  <body class="container-fluid">
+    <my-app>Loading...</my-app>
+  </body>
+</html>

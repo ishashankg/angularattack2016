@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <div class="header-text-container">
+      <h1>Travel Recommender</h1>
+      <hr style="width: 400px;" />
+    </div>
+
+    <div class="home-input-container">
+      <chicha-input  [placeHolderText]="'Enter Your Name'" [(bindModelData)]="accountName"></chicha-input>
+      <button (click)="send(accountName)" class="tweet-account-btn">Explore<img src="https://maxcdn.icons8.com/Color/PNG/24/Arrows/double_right-24.png" title="Double Right" width="22"></button>
+    </div>
+  </div>
+</div>

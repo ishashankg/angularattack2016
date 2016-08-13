@@ -1,0 +1,11 @@
+<div>  
+	<div class="header-text-container">
+		<h1>Recommendation</h1> 
+		<hr style="width: 400px;" />
+	</div>
+
+	<div *ngFor="let place of places">
+	    <city-item [place]= "place"></city-item>
+	</div>
+	
+</div>
